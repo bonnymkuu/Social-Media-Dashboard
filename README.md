@@ -38,25 +38,20 @@ A modern, fully responsive social media analytics dashboard built with **Vite**,
 
 🧪 Getting Started
 1. Clone the repository
-bash
-Copy
-Edit
-git clone https://github.com/your-username/social-media-dashboard.git
+
+git clone https://github.com/bonnymkuu/Social-Media-Dashboard.git
 cd social-media-dashboard
+
 2. Install dependencies
-bash
-Copy
-Edit
+
 npm install
+
 3. Start development server
-bash
-Copy
-Edit
+
 npm run dev
+
 4. Build for production
-bash
-Copy
-Edit
+
 npm run build
 
 ###📊 Charts Included
