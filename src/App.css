@@ -1,0 +1,84 @@
+/* App.css - Extend layout to full width and height with responsive scroll */
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Ensure the dashboard stretches full-screen */
+.full-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Allow scrolling for inner content only */
+.dashboard-content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 1rem;
+}
+
+/* Responsive sidebar fix */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+/* Optional: transition animations */
+.sidebar,
+.header,
+.footer {
+  transition: all 0.3s ease;
+}
+
+
+.glass-card {
+  background: rgba(0, 102, 255, 0.2);
+  backdrop-filter: blur(12px);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 15px 25px rgba(0, 0, 50, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #132750;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 20px 30px rgba(0, 0, 80, 0.25);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 30px rgba(0, 0, 50, 0.25);
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 25px 35px rgba(0, 0, 60, 0.3);
+}
+
+
+.glass-table {
+  border-radius: 12px;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(6px);
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.table-dark.glass-table {
+  background-color: rgba(33, 37, 41, 0.8);
+  box-shadow: inset 0 2px 8px rgba(255, 255, 255, 0.08);
+}
